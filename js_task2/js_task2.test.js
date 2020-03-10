@@ -50,19 +50,19 @@ test("checks whether sales figures are valid", () => {
     .toEqual("Sales amount should be a Number");
 
   expect(sortSalesByAmount([...initialSalesArray, { amount: [], quantity: 5 }]))
-    .toEqual('Sales amount should be a Number');
+    .toEqual("Sales amount should be a Number");
 
   expect(sortSalesByAmount([...initialSalesArray, { amount: {}, quantity: 5 }]))
-    .toEqual('Sales amount should be a Number');
+    .toEqual("Sales amount should be a Number");
 
   expect(sortSalesByAmount([...initialSalesArray, { amount: "", quantity: 5 }]))
-    .toEqual('Sales amount should be a Number');
+    .toEqual("Sales amount should be a Number");
 
   expect(sortSalesByAmount([...initialSalesArray, { amount: "   ", quantity: 5 }]))
-    .toEqual('Sales amount should be a Number');
+    .toEqual("Sales amount should be a Number");
 
   expect(sortSalesByAmount([...initialSalesArray, {}]))
-    .toEqual('Sales amount should be a Number');
+    .toEqual("Sales amount should be a Number");
 });
 
 test("checks whether initial Sales array remains intact", () => {
