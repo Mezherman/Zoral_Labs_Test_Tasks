@@ -6,3 +6,5 @@ GENERAL:
 
 TASK STATUS:
 JS Task2 - done
+JS Task1 - done
+JS Task3 - done

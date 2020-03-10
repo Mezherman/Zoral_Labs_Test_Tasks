@@ -1,17 +1,17 @@
-function sortSalesByAmount(salesArrayUnsorted, sortingOrder = 'asc') {
-  const sortingTypes = ['asc', 'desc'];
+function sortSalesByAmount(salesArrayUnsorted, sortingOrder = "asc") {
+  const sortingTypes = ["asc", "desc"];
 
   if (!sortingTypes.includes(sortingOrder)) {
-    return 'Please, choose correct sorting order [asc, desc]';
+    return "Please, choose correct sorting order [asc, desc]";
   }
 
   for (let i = 0; i < salesArrayUnsorted.length; i++) {
     const salesAmount = salesArrayUnsorted[i].amount;
 
-    if (!['number', 'string'].includes(typeof salesAmount)) {
-      return 'Sales amount should be a Number';
+    if (!["number", "string"].includes(typeof salesAmount)) {
+      return "Sales amount should be a Number";
     } else if (salesAmount.toString().trim().length === 0 || isNaN(+salesAmount)) {
-      return 'Sales amount should be a Number';
+      return "Sales amount should be a Number";
     }
   }
 
@@ -33,7 +33,7 @@ function compareSales(a, b, sortingOrder) {
     result = -1
   }
 
-  return sortingOrder === 'asc' ? result : -result;
+  return sortingOrder === "asc" ? result : -result;
 }
 
 module.exports = sortSalesByAmount;
@@ -49,4 +49,4 @@ const initialSalesArray = [
   { amount: -100, quantity: 6 },
 ];
 
-console.log('Answer:', sortSalesByAmount(initialSalesArray, 'asc'));
+console.log("Answer:", sortSalesByAmount(initialSalesArray, "asc"));

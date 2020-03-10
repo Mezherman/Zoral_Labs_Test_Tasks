@@ -4,8 +4,10 @@
   "description": "Test tasks in Zoral Labs",
   "main": "index.js",
   "scripts": {
+    "task1": "node js_task1/js_task1.js",
     "task2": "node js_task2/js_task2.js",
-    "test2": "jest js_task2/js_task2.test.js"
+    "test2": "jest js_task2/js_task2.test.js",
+    "task3": "node js_task3/js_task3.js"
   },
   "repository": {
     "type": "git",
