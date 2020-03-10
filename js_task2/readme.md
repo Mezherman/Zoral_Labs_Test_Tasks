@@ -1,0 +1,1 @@
+assume that bigInt is not used as sales amount

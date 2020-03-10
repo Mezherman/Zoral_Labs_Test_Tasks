@@ -1,0 +1,23 @@
+{
+  "name": "zoral_labs_test_tasks",
+  "version": "1.0.0",
+  "description": "Test tasks in Zoral Labs",
+  "main": "index.js",
+  "scripts": {
+    "task2": "node js_task2/js_task2.js",
+    "test2": "jest js_task2/js_task2.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mezherman/Zoral_Labs_Test_Tasks.git"
+  },
+  "author": "Vladyslav Mezheritskyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mezherman/Zoral_Labs_Test_Tasks/issues"
+  },
+  "homepage": "https://github.com/Mezherman/Zoral_Labs_Test_Tasks#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
