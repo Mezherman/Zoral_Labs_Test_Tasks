@@ -1,0 +1,22 @@
+.time-table-wrapper {
+  margin: 20px 0;
+  display: none;
+}
+
+.calendar-desc {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.time-table {
+  border: 1px solid black;
+}
+
+.error-msg {
+  display: none;
+  color: red;
+}
+
+.calendar-id-input {
+  display: inline-block;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Calendar API Quickstart</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  <p>Google Calendar API - Free/Busy slots</p>
+  <div class="calendar-id-wrapper">
+    <span>Enter Google Calendar ID:</span>
+    <input type="text" class="calendar-id-input">
+    <button onclick="runApp()">RUN</button>
+  </div>
+  <p class="error-msg">Google calendar with such ID wasn't found or there is
+    no access to this calendar.</p>
+  <div class="time-table-wrapper">
+    <p class="calendar-title-wrapper">
+      <span class="calendar-desc">Calendar ID:</span>
+      <span class="calendar-title"></span>
+    </p>
+    <p class="calendar-title-wrapper">
+      <span class="calendar-desc">From:</span>
+      <span class="time-from"></span>
+    </p>
+    <p class="calendar-title-wrapper">
+      <span class="calendar-desc">Till:</span>
+      <span class="time-till"></span>
+    </p>
+    <table class="time-table">
+      <thead>
+      <tr>
+        <th>Status</th>
+        <th>Start</th>
+        <th>End</th>
+      </tr>
+      </thead>
+      <tbody class="time-table-body"></tbody>
+    </table>
+  </div>
+
+<script src="fetchData.js"></script>
+<script src="authenticate.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
