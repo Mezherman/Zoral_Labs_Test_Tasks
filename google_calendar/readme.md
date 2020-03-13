@@ -9,5 +9,5 @@ http-server --port 8080
 
 4) Enter in input field valid CalendarID of shared Google Calendar 
 
-5) You can test program with calendarId = 'ffrs31a85u0mm3fj8ctl6j3510@group.calendar.google.com' or
+5) You can test program with calendarId => ffrs31a85u0mm3fj8ctl6j3510@group.calendar.google.com or
  any other shared Google calendar
